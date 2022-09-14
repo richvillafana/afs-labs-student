@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-deployment
+  name: db-deployment
   namespace: rvillafana
   labels:
-    app: app
+    app: db
 spec:
   replicas: 1
   strategy:
@@ -12,17 +12,17 @@ spec:
   minReadySeconds: 20
   selector:
     matchLabels:
-      app: app
+      app: db
   template:
     metadata:
       labels:
-        app: app
+        app: db
     spec:
       containers:
       - envFrom:
         - secretRef:
             name: db-secret
-        name: app-deployment
-        image: harbor.dev.afsmtddso.com/rvillafana-harbor-project/app@sha256:542d67662ab08384f85feb25d18654ac80a5ff370988611a068d805e792bfbbc
+        name: db-deployment
+        image: harbor.dev.afsmtddso.com/rvillafana-harbor-project/db@sha256:8a42cc70144996db971f5298394a4ed5d230cfc50cf14d3d4394c98768bb0484
         ports:
-        - containerPort: 5000
+        - containerPort: 5432
