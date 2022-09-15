@@ -1,4 +1,4 @@
-# Farm to Front Door
+# Farm to Front Door, the app
 
 Farm to Front Door is a food delivery web app built in Python with Flask, SQLAlchemy & AngularJS. Database scraped from Good Eggs and the Noun Project, using BeautifulSoup and Selenium. Recipe suggestions pulled from Edamam API. Mapping with Google Maps Javascript API. Payment form using Stripe API. Using Twitter Bootstrap.
 
