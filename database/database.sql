@@ -1,3 +1,4 @@
+-- This be that comment, lab 6 you know.
 --
 -- PostgreSQL database dump
 --
