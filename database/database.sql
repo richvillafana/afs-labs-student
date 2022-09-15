@@ -1,4 +1,5 @@
 -- This be that comment, lab 6 you know.
+-- Change DB again
 --
 -- PostgreSQL database dump
 --
